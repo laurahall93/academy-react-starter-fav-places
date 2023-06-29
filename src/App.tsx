@@ -1,4 +1,3 @@
-import { greet } from "./utils/greet";
 import "./style.css";
 import PageHeader from "./PageHeader";
 import PageBody from "./PageBody";
