@@ -39,7 +39,7 @@ function PageBody(): JSX.Element {
              />
              <BlogEntry
                 title={"For the trill"}
-                name={"mout Teide"}
+                name={"Mout Teide"}
                 country={"Spain"}
                 image={"https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/08/parque-nacional-teide.jpg"}
                 location={"https://goo.gl/maps/C61dPxgNt9CXAcgV6"}

@@ -11,11 +11,11 @@ interface BlogEntryProps {
 
 function BlogEntry(props: BlogEntryProps ): JSX.Element {
     return(
-        <section>
+        <section className="blog-entry">
             <h2>{props.title}</h2>
             <h3>{props.name}</h3>
             <p>{props.country}</p>
-            <img src={props.image}/>
+            <img className="entry-img"src={props.image}/>
             <a href={props.location} target="_blank">Click for the location!</a>
             <p>{props.description}</p>
 
