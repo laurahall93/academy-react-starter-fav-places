@@ -1,7 +1,18 @@
 import { greet } from "./utils/greet";
+import "./style.css";
+import PageHeader from "./PageHeader";
+import PageBody from "./PageBody";
+import PageFooter from "./PageFooter";
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return (
+    <>
+      <PageHeader />
+      <PageBody />
+      <PageFooter />
+    </>
+
+  )
 }
 
 export default App;
