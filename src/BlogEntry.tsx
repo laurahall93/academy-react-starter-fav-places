@@ -1,4 +1,8 @@
-interface BlogEntryProps {
+interface BlogEntryProps{
+    entries: BlogEntryData[];
+}
+
+export interface BlogEntryData {
     title: string;
     name: string;
     country: string;
@@ -7,17 +11,26 @@ interface BlogEntryProps {
     description: string;
 }
 
-function BlogEntry(props: BlogEntryProps ): JSX.Element {
-    return(
-        <section className="blog-entry">
-            <h2>{props.title}</h2>
-            <h3>{props.name}</h3>
-            <p>{props.country}</p>
-            <img className="blog-img"src={props.image} alt="location"/>
-            <a href={props.location} target="_blank" rel="noreferrer"  >Click for the location!</a>
-            <p>{props.description}</p>
 
-        </section>
+
+const BlogEntry = (props: BlogEntryProps): JSX.Element => {
+    const {entries} = props;
+    return(
+        <div>
+            {entries.map((entry, index) => (
+            <section className="blog-entry" key={index}>
+                <h2>{entry.title}</h2>
+                <h3>{entry.name}</h3>
+                <p>{entry.country}</p>
+                <img className="blog-img"src={entry.image} alt="location"/>
+                <a href={entry.location} target="_blank" rel="noreferrer"  >
+                Click for the location!
+                </a>
+                <p>{entry.description}</p>
+
+            </section>
+        ))}
+        </div>
     );
 }
 
