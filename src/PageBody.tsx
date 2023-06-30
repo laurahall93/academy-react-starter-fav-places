@@ -8,7 +8,7 @@ function PageBody(): JSX.Element {
             <BlogEntry
                 title={"Cat Cafe"}
                 name={"Maison de Moggy"}
-                country={"Scotland, Edinburg"}
+                country={"Scotland, Edinburgh"}
                 image={"https://i2-prod.edinburghlive.co.uk/incoming/article15252592.ece/ALTERNATES/s1200c/0_cat-edinbrgh.jpg"}
                 location={"https://goo.gl/maps/fsSPwkDvXUbwnd7n8"}
                 description={"Bright, relaxed cafe with wicker furniture and 12 resident cats, serving tea, coffee and cakes."}
@@ -38,7 +38,7 @@ function PageBody(): JSX.Element {
                 description={"São Miguel is the biggest island in the Portuguese Azores archipelago. It's known for its volcanic scenery, flora and rich marine life, including whales."}
              />
              <BlogEntry
-                title={"For the trill"}
+                title={"For the thrill"}
                 name={"Mout Teide"}
                 country={"Spain"}
                 image={"https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/08/parque-nacional-teide.jpg"}

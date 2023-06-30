@@ -13,7 +13,7 @@ function BlogEntry(props: BlogEntryProps ): JSX.Element {
             <h2>{props.title}</h2>
             <h3>{props.name}</h3>
             <p>{props.country}</p>
-            <img className="entry-img"src={props.image} alt="location"/>
+            <img className="blog-img"src={props.image} alt="location"/>
             <a href={props.location} target="_blank" rel="noreferrer"  >Click for the location!</a>
             <p>{props.description}</p>
 
